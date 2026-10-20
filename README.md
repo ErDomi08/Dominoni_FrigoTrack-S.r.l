@@ -1,0 +1,1 @@
+# Dominoni_FrigoTrack-S.r.l.
