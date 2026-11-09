@@ -6,7 +6,7 @@ using Server.Services;
 namespace Server.Controllers
 {
     [ApiController]
-    [Route("api/readings")]
+    [Route("/api/telemetry")]
     public class Telemetria : ControllerBase
     {
         private readonly Gestionesessioni sessioni;

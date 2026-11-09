@@ -6,7 +6,7 @@
   "properties": {
     "p": { "type": "string", "pattern": "^[0-9]+$" },
     "g": { "type": "string", "pattern": "^[0-9]+$" },
-    "chiave_pubblica_client": { "type": "string", "pattern": "^[0-9]+$" }
+    "chiave_pubblica_client_A": { "type": "string", "pattern": "^[0-9]+$" }
   },
   "additionalProperties": false
 }

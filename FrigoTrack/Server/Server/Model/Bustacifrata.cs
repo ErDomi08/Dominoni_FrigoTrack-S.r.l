@@ -7,8 +7,8 @@ namespace Server.Model
         [JsonPropertyName("session_id")]
         public string SessionId { get; set; } = "";
 
-        [JsonPropertyName("testo_cifrato")]
-        public string TestoCifrato { get; set; } = "";
+        [JsonPropertyName("ciphertext")]
+        public string Ciphertext { get; set; } = "";
 
         [JsonPropertyName("tag")]
         public string Tag { get; set; } = "";

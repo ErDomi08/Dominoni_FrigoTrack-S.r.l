@@ -6,7 +6,7 @@ using Server.Services;
 namespace Server.Controllers
 {
     [ApiController]
-    [Route("api/handshake")]
+    [Route("api/close")]
     public class Chiusurasessioni : ControllerBase
     {
         private readonly Gestionesessioni sessioni;
