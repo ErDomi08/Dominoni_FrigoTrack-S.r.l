@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Richiesta Handshake",
+  "type": "object",
+  "required": ["p", "g", "chiave_pubblica_client_A"],
+  "properties": {
+    "p": { "type": "string", "pattern": "^[0-9]+$" },
+    "g": { "type": "string", "pattern": "^[0-9]+$" },
+    "chiave_pubblica_client": { "type": "string", "pattern": "^[0-9]+$" }
+  },
+  "additionalProperties": false
+}

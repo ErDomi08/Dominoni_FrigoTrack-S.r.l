@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\controllers\\chiusurasessioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\controllers\\chiusurasessioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\controllers\\handshake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\controllers\\handshake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\controllers\\readings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\controllers\\readings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\controllers\\telemetria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\controllers\\telemetria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\services\\salvataggiomisura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\services\\salvataggiomisura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\model\\sessione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\model\\sessione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\services\\controllo_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\services\\controllo_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\services\\gestionesessioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\services\\gestionesessioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\model\\bustacifrata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\model\\bustacifrata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\services\\crittografia_aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\services\\crittografia_aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\services\\diffiehellman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\services\\diffiehellman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|c:\\users\\antoa\\onedrive\\desktop\\server\\server\\model\\misurasensore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B822558D-3FDB-4F74-A015-56BFDE242C04}|Server\\Server.csproj|solutionrelative:server\\model\\misurasensore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chiusurasessioni.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Chiusurasessioni.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\Chiusurasessioni.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Chiusurasessioni.cs",
+              "RelativeToolTip": "Server\\Controllers\\Chiusurasessioni.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T19:03:32.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Readings.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Readings.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\Readings.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Readings.cs",
+              "RelativeToolTip": "Server\\Controllers\\Readings.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T19:00:31.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Telemetria.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Telemetria.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\Telemetria.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Telemetria.cs",
+              "RelativeToolTip": "Server\\Controllers\\Telemetria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:54:49.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Handshake.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Handshake.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\Handshake.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Controllers\\Handshake.cs",
+              "RelativeToolTip": "Server\\Controllers\\Handshake.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:45:26.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Salvataggiomisura.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Salvataggiomisura.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\Salvataggiomisura.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Salvataggiomisura.cs",
+              "RelativeToolTip": "Server\\Services\\Salvataggiomisura.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:40:47.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Controllo_JSON.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Controllo_JSON.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\Controllo_JSON.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Controllo_JSON.cs",
+              "RelativeToolTip": "Server\\Services\\Controllo_JSON.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:30:47.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Crittografia_AES.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Crittografia_AES.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\Crittografia_AES.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Crittografia_AES.cs",
+              "RelativeToolTip": "Server\\Services\\Crittografia_AES.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:21:03.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DiffieHellman.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\DiffieHellman.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\DiffieHellman.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\DiffieHellman.cs",
+              "RelativeToolTip": "Server\\Services\\DiffieHellman.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:11:56.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Gestionesessioni.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Gestionesessioni.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\Gestionesessioni.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Services\\Gestionesessioni.cs",
+              "RelativeToolTip": "Server\\Services\\Gestionesessioni.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:09:58.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sessione.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Model\\Sessione.cs",
+              "RelativeDocumentMoniker": "Server\\Model\\Sessione.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Model\\Sessione.cs",
+              "RelativeToolTip": "Server\\Model\\Sessione.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:06:19.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Bustacifrata.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Model\\Bustacifrata.cs",
+              "RelativeDocumentMoniker": "Server\\Model\\Bustacifrata.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Model\\Bustacifrata.cs",
+              "RelativeToolTip": "Server\\Model\\Bustacifrata.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T18:05:00.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Misurasensore.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Model\\Misurasensore.cs",
+              "RelativeDocumentMoniker": "Server\\Model\\Misurasensore.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Model\\Misurasensore.cs",
+              "RelativeToolTip": "Server\\Model\\Misurasensore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T17:47:48.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T17:29:04.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Server.csproj",
+              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Server.csproj",
+              "RelativeDocumentMoniker": "Server\\Server.csproj",
+              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Server\\Server\\Server.csproj",
+              "RelativeToolTip": "Server\\Server.csproj",
+              "ViewState": "AgIAAAgAAABgBcJIO9YXwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-09T17:29:01.074Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

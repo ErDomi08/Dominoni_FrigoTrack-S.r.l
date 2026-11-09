@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "Server.Controllers.Chiusurasessioni",
+    "Method": "Close",
+    "RelativePath": "api/handshake",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "busta",
+        "Type": "Server.Model.BustaCifrata",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.Handshake",
+    "Method": "handshake",
+    "RelativePath": "api/handshake",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "richiesta",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.Readings",
+    "Method": "readings",
+    "RelativePath": "api/readings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "busta",
+        "Type": "Server.Model.BustaCifrata",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Server.Controllers.Telemetria",
+    "Method": "Telemetry",
+    "RelativePath": "api/readings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "busta",
+        "Type": "Server.Model.BustaCifrata",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

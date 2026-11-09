@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["misure"],
+  "properties": {
+    "misure": {
+      "type": "array",
+      "items": {
+        "$ref": "misura_sensore.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
