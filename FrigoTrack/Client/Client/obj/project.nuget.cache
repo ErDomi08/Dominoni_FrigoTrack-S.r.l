@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "zWngknfyicI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\antoa\\.nuget\\packages\\humanizer.core\\3.0.10\\humanizer.core.3.0.10.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\json.more.net\\3.0.1\\json.more.net.3.0.1.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\jsonpointer.net\\7.0.4\\jsonpointer.net.7.0.4.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\jsonschema.net\\9.6.0\\jsonschema.net.9.6.0.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\system.io.pipelines\\10.0.14\\system.io.pipelines.10.0.14.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\system.net.http.json\\10.0.14\\system.net.http.json.10.0.14.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\system.text.encodings.web\\10.0.14\\system.text.encodings.web.10.0.14.nupkg.sha512",
+    "C:\\Users\\antoa\\.nuget\\packages\\system.text.json\\10.0.14\\system.text.json.10.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

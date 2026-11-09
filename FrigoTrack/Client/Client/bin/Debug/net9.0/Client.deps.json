@@ -1,0 +1,191 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Client/1.0.0": {
+        "dependencies": {
+          "JsonSchema.Net": "9.6.0",
+          "Newtonsoft.Json": "13.0.4",
+          "System.Net.Http.Json": "10.0.14"
+        },
+        "runtime": {
+          "Client.dll": {}
+        }
+      },
+      "Humanizer.Core/3.0.10": {
+        "runtime": {
+          "lib/net8.0/Humanizer.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.10.37104"
+          }
+        }
+      },
+      "Json.More.Net/3.0.1": {
+        "runtime": {
+          "lib/net9.0/Json.More.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "JsonPointer.Net/7.0.4": {
+        "dependencies": {
+          "Humanizer.Core": "3.0.10",
+          "Json.More.Net": "3.0.1"
+        },
+        "runtime": {
+          "lib/net9.0/JsonPointer.Net.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.4.0"
+          }
+        }
+      },
+      "JsonSchema.Net/9.6.0": {
+        "dependencies": {
+          "JsonPointer.Net": "7.0.4"
+        },
+        "runtime": {
+          "lib/net9.0/JsonSchema.Net.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.6.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.4": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.4.30916"
+          }
+        }
+      },
+      "System.IO.Pipelines/10.0.14": {
+        "runtime": {
+          "lib/net9.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1426.52326"
+          }
+        }
+      },
+      "System.Net.Http.Json/10.0.14": {
+        "dependencies": {
+          "System.Text.Json": "10.0.14"
+        },
+        "runtime": {
+          "lib/net9.0/System.Net.Http.Json.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1426.52326"
+          }
+        }
+      },
+      "System.Text.Encodings.Web/10.0.14": {
+        "runtime": {
+          "lib/net9.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1426.52326"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
+            "rid": "browser",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1426.52326"
+          },
+          "runtimes/win/lib/net9.0/System.Text.Encodings.Web.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1426.52326"
+          }
+        }
+      },
+      "System.Text.Json/10.0.14": {
+        "dependencies": {
+          "System.IO.Pipelines": "10.0.14",
+          "System.Text.Encodings.Web": "10.0.14"
+        },
+        "runtime": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1426.52326"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Humanizer.Core/3.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yZIhtw8sYuvsONzQbZxWpR60tMWYHXoo0DL6nyOqSFiU5POjBTSEyWFpTQtJEZuy+oqiYTXKXY/Mjx7KnqIQFw==",
+      "path": "humanizer.core/3.0.10",
+      "hashPath": "humanizer.core.3.0.10.nupkg.sha512"
+    },
+    "Json.More.Net/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fRctF2J2SILYG6wqP21drmeEODmCVkVQ/b3MndDu2fT1swfySyUgq7ePCk+aENGlDcIm05fyfjh9vcuqDEfv3w==",
+      "path": "json.more.net/3.0.1",
+      "hashPath": "json.more.net.3.0.1.nupkg.sha512"
+    },
+    "JsonPointer.Net/7.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HjP+Y8HxtbMMcLgci0/iR+UQ3dDQifS6TFZgXxO2ilqHQ97DjhdCFNMcbxN+68XqzxDmyIPvU+rn2TJQl1vc5A==",
+      "path": "jsonpointer.net/7.0.4",
+      "hashPath": "jsonpointer.net.7.0.4.nupkg.sha512"
+    },
+    "JsonSchema.Net/9.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bwHvTUy4gsSfMwncWT4w1OeKiZJ/yw0W1mtQq4iO6vVJdX/8xj+5Kf6q180C6yDPlRm3PS9UXTB/MecXAkdEVw==",
+      "path": "jsonschema.net/9.6.0",
+      "hashPath": "jsonschema.net.9.6.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
+    },
+    "System.IO.Pipelines/10.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pLVClkIC4XfXhcOQXNtNDJl5LYJOS4XAQAdzbqF8rj6sk2zdXO/5uikBsZqgqnAAb07z9Fmtu0sMj3TwEiBtIw==",
+      "path": "system.io.pipelines/10.0.14",
+      "hashPath": "system.io.pipelines.10.0.14.nupkg.sha512"
+    },
+    "System.Net.Http.Json/10.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bwcU7BJnthpy+oPavZ3a6XikVXR8fSzWakycpzPNtOrzh0PZmNLMgLmcRQLR1uIUQragNdhWHsHpIBM1knkIpA==",
+      "path": "system.net.http.json/10.0.14",
+      "hashPath": "system.net.http.json.10.0.14.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/10.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+aDpFLtsHyft9ZVx9pZQ9MILqwrr8LK1te1L39VMKQYhoYDbs+RUqBhCT3Zydb5ymi2Buo4Cn+3Wi208IxD6rw==",
+      "path": "system.text.encodings.web/10.0.14",
+      "hashPath": "system.text.encodings.web.10.0.14.nupkg.sha512"
+    },
+    "System.Text.Json/10.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JSSLGJTJJDvS76VnLdY1X289rFcHuYApk7QGw0hCoP5wVR1mk7BvJbOYxQLXq4x1qK/Ml9OHa/AKaAbBVCfSSQ==",
+      "path": "system.text.json/10.0.14",
+      "hashPath": "system.text.json.10.0.14.nupkg.sha512"
+    }
+  }
+}
