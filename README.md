@@ -36,7 +36,5 @@ Il corretto funzionamento dell'applicazione è stato verificato tramite 5 Test f
 1. **Test 1: Handshake iniziale.** Verifica il corretto scambio dei parametri del Diffie-Hellman e la generazione della chiave segreta tra Client e Server.
 2. **Test 2: Invio di una misura corretta.** Dimostra il flusso: generazione dati, cifratura AES-GCM, invio, ricezione sul Server, decifratura e corretta validazione JSON.
 3. **Test 3: Invio di un JSON non formattato correttamente.** Il Client invia un JSON volontariamente errato. Il Server intercetta l'anomalia tramite il suo JSON Schema e rifiuta la richiesta Client restituendo un errore.
-4. ****
-5. ****
 4. **Test 4: Invio di una busta cifrata con chiave errata.** Il Client invia dati cifrati con una chiave differente da quella concordata. Il Server fallisce la decifratura e scarta il pacchetto infetto.
-5. **Test 5: Chiusura della sessione.** Verifica il comando di terminazione della sessione attiva, invalidando la chiave di cifratura sul Server.
+5. **Test 5: Chiusura della sessione.** Verifica il comando di terminazione della sessione attiva.
