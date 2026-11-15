@@ -25,7 +25,7 @@ Il flusso:
 * **Sicurezza e Crittografia:**
   * **Scambio chiavi:** *Diffie-Hellman* per evitare la trasmissione della chiave in chiaro.
   * **Cifratura simmetrica:** *AES-GCM*, assicura sia riservatezza che l'autenticità del dato cifrato, prevenendo possibili attacchi.
-* **Gestione dei Dati e Validazione:** I messaggi sono definiti da file *JSON Schema*. La validazione sintattica a runtime è affidata a `JsonSchema.Net`.
+* **Gestione dei Dati e Validazione:** I messaggi sono definiti da file *JSON Schema*. La validazione sintattica a runtime è affidata a JsonSchema.Net.
 
 ---
 
