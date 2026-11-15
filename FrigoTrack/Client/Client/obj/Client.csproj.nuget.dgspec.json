@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj": {}
+    "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj": {
+    "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj",
+        "projectPath": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\antoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\obj\\",
+        "outputPath": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

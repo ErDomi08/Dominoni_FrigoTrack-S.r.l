@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id_sensore", "ora_inizio", "ora_fine"],
+  "properties": {
+    "id_sensore": {
+      "type": "string",
+      "pattern": "^[A-Z]+-[A-Z]{2}-[0-9]{3}$"
+    },
+    "ora_inizio": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ora_fine": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

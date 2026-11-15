@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zWngknfyicI=",
+  "dgSpecHash": "eoTMQXtEsFQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj",
+  "projectFilePath": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antoa\\.nuget\\packages\\humanizer.core\\3.0.10\\humanizer.core.3.0.10.nupkg.sha512",
     "C:\\Users\\antoa\\.nuget\\packages\\json.more.net\\3.0.1\\json.more.net.3.0.1.nupkg.sha512",

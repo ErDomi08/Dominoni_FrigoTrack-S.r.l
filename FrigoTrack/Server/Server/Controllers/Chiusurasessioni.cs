@@ -31,7 +31,7 @@ namespace Server.Controllers
                 // Verifica che la richiesta sia autentica
                 cifratura.Decifra(
                     sessione.Chiave,
-                    busta.TestoCifrato,
+                    busta.Ciphertext,
                     busta.Tag
                 );
 

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["session_id", "ciphertext", "tag"],
+    "properties": {
+        "session_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{8}$"
+        },
+        "ciphertext": {
+            "type": "string"
+        },
+        "tag": {
+            "type": "string"
+        }
+    },
+  "additionalProperties": false
+}

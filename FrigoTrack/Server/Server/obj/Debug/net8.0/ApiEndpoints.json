@@ -2,7 +2,7 @@
   {
     "ContainingType": "Server.Controllers.Chiusurasessioni",
     "Method": "Close",
-    "RelativePath": "api/handshake",
+    "RelativePath": "api/close",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -50,7 +50,7 @@
   {
     "ContainingType": "Server.Controllers.Telemetria",
     "Method": "Telemetry",
-    "RelativePath": "api/readings",
+    "RelativePath": "api/telemetry",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["stato", "codice_errore", "messaggio"],
+  "properties": {
+    "stato": { 
+      "type": "string",
+      "enum": ["ERRORE"] 
+    },
+    "codice_errore": { 
+      "type": "integer",
+      "minimum": 1000,
+      "maximum": 9999
+    },
+    "messaggio": { 
+      "type": "string" 
+    }
+  },
+  "additionalProperties": false
+}

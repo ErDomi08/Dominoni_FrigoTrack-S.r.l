@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <Content Include="schemas\**\*.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
     <PackageReference Include="JsonSchema.Net" Version="9.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="System.Net.Http.Json" Version="10.0.14" />

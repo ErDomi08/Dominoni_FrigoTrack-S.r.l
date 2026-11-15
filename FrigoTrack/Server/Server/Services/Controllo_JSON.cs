@@ -4,7 +4,8 @@ using Json.Schema;
 
 namespace Server.Services
 {
-    public class Controllo_JSON{ 
+    public class Controllo_JSON
+    {
         private readonly string percorso;
 
         public Controllo_JSON(IWebHostEnvironment env)
@@ -22,13 +23,8 @@ namespace Server.Services
             string testoSchema = File.ReadAllText(file);
 
             JsonSchema schema = JsonSchema.FromText(testoSchema);
-            JsonNode? dati = JsonNode.Parse(json);
 
-            if (dati == null)
-                return false;
-
-            // Conversione da JsonNode a JsonElement
-            JsonElement elemento = dati.AsObject().AsValue().GetValue<JsonElement>();
+            JsonDocument documento = JsonDocument.Parse(json);
 
             EvaluationOptions opzioni = new()
             {
@@ -36,11 +32,14 @@ namespace Server.Services
                 RequireFormatValidation = true
             };
 
-            var risultato = schema.Evaluate(elemento, opzioni);
+            var risultato = schema.Evaluate(
+                documento.RootElement,
+                opzioni
+            );
 
             return risultato.IsValid;
         }
-    }
 
+    }
 }
 

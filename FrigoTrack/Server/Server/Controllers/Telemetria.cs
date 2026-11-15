@@ -44,7 +44,7 @@ namespace Server.Controllers
                 // Prima decifriamo il messaggio
                 string json = cifratura.Decifra(
                     sessione.Chiave,
-                    busta.TestoCifrato,
+                    busta.Ciphertext,
                     busta.Tag
                 );
 
@@ -82,7 +82,7 @@ namespace Server.Controllers
                 return Ok(new BustaCifrata
                 {
                     SessionId = busta.SessionId,
-                    TestoCifrato = cifrato.TestoCifrato,
+                    Ciphertext = cifrato.TestoCifrato,
                     Tag = cifrato.Tag
                 });
             }

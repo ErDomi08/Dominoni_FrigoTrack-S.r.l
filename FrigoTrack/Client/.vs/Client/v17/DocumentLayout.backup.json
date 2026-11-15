@@ -1,139 +1,255 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\",
+  "WorkspaceRootPath": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\onedrive\\desktop\\client\\client\\services\\controllo_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\services\\controllo_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\onedrive\\desktop\\client\\client\\model\\busta_cifrata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\model\\busta_cifrata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\onedrive\\desktop\\client\\client\\model\\misurasensore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\model\\misurasensore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\onedrive\\desktop\\client\\client\\services\\crittografiaaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\services\\crittografiaaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\onedrive\\desktop\\client\\client\\services\\diffie_hellman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\services\\diffie_hellman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\onedrive\\desktop\\client\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\onedrive\\desktop\\client\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\schemas\\risposta_reading.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\schemas\\risposta_reading.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\services\\controllo_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\services\\controllo_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\schemas\\misura_sensore.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\schemas\\misura_sensore.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\schemas\\richiesta_handshake.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\schemas\\richiesta_handshake.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\schemas\\busta_cifrata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\schemas\\busta_cifrata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\schemas\\messaggio_d\u0027errore.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\schemas\\messaggio_d\u0027errore.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\schemas\\richieste_reading.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\schemas\\richieste_reading.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\schemas\\risposta_handshake.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\schemas\\risposta_handshake.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\services\\diffie_hellman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\services\\diffie_hellman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\model\\busta_cifrata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\model\\busta_cifrata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\model\\misurasensore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\model\\misurasensore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|c:\\users\\antoa\\music\\dominoni_frigotrack-s.r.l\\frigotrack\\client\\client\\services\\crittografiaaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DA39E2-4DA4-4F27-9565-7D3D441FFF6A}|Client\\Client.csproj|solutionrelative:client\\services\\crittografiaaes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 14,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Busta_cifrata.cs",
-              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Model\\Busta_cifrata.cs",
-              "RelativeDocumentMoniker": "Client\\Model\\Busta_cifrata.cs",
-              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Model\\Busta_cifrata.cs",
-              "RelativeToolTip": "Client\\Model\\Busta_cifrata.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T21:10:14.054Z",
+              "DocumentIndex": 5,
+              "Title": "busta_cifrata.json",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\busta_cifrata.json",
+              "RelativeDocumentMoniker": "Client\\schemas\\busta_cifrata.json",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\busta_cifrata.json",
+              "RelativeToolTip": "Client\\schemas\\busta_cifrata.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-15T17:35:02.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MisuraSensore.cs",
-              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Model\\MisuraSensore.cs",
-              "RelativeDocumentMoniker": "Client\\Model\\MisuraSensore.cs",
-              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Model\\MisuraSensore.cs",
-              "RelativeToolTip": "Client\\Model\\MisuraSensore.cs",
+              "DocumentIndex": 6,
+              "Title": "messaggio_d\u0027errore.json",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\messaggio_d\u0027errore.json",
+              "RelativeDocumentMoniker": "Client\\schemas\\messaggio_d\u0027errore.json",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\messaggio_d\u0027errore.json",
+              "RelativeToolTip": "Client\\schemas\\messaggio_d\u0027errore.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-15T17:34:58.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "misura_sensore.json",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\misura_sensore.json",
+              "RelativeDocumentMoniker": "Client\\schemas\\misura_sensore.json",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\misura_sensore.json",
+              "RelativeToolTip": "Client\\schemas\\misura_sensore.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T21:10:09.002Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-15T17:34:54.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Diffie_Hellman.cs",
-              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Services\\Diffie_Hellman.cs",
-              "RelativeDocumentMoniker": "Client\\Services\\Diffie_Hellman.cs",
-              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Services\\Diffie_Hellman.cs",
-              "RelativeToolTip": "Client\\Services\\Diffie_Hellman.cs",
+              "Title": "richiesta_handshake.json",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\richiesta_handshake.json",
+              "RelativeDocumentMoniker": "Client\\schemas\\richiesta_handshake.json",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\richiesta_handshake.json",
+              "RelativeToolTip": "Client\\schemas\\richiesta_handshake.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-15T17:34:51.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "richieste_reading.json",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\richieste_reading.json",
+              "RelativeDocumentMoniker": "Client\\schemas\\richieste_reading.json",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\richieste_reading.json",
+              "RelativeToolTip": "Client\\schemas\\richieste_reading.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-15T17:34:46.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "risposta_handshake.json",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\risposta_handshake.json",
+              "RelativeDocumentMoniker": "Client\\schemas\\risposta_handshake.json",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\risposta_handshake.json",
+              "RelativeToolTip": "Client\\schemas\\risposta_handshake.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-15T17:34:42.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "risposta_reading.json",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\risposta_reading.json",
+              "RelativeDocumentMoniker": "Client\\schemas\\risposta_reading.json",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\schemas\\risposta_reading.json",
+              "RelativeToolTip": "Client\\schemas\\risposta_reading.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-15T17:33:19.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Busta_cifrata.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Model\\Busta_cifrata.cs",
+              "RelativeDocumentMoniker": "Client\\Model\\Busta_cifrata.cs",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Model\\Busta_cifrata.cs",
+              "RelativeToolTip": "Client\\Model\\Busta_cifrata.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T21:10:14.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MisuraSensore.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Model\\MisuraSensore.cs",
+              "RelativeDocumentMoniker": "Client\\Model\\MisuraSensore.cs",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Model\\MisuraSensore.cs",
+              "RelativeToolTip": "Client\\Model\\MisuraSensore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T21:10:09.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Diffie_Hellman.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Services\\Diffie_Hellman.cs",
+              "RelativeDocumentMoniker": "Client\\Services\\Diffie_Hellman.cs",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Services\\Diffie_Hellman.cs",
+              "RelativeToolTip": "Client\\Services\\Diffie_Hellman.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAA7wA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-09T21:10:02.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "CrittografiaAES.cs",
-              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Services\\CrittografiaAES.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Services\\CrittografiaAES.cs",
               "RelativeDocumentMoniker": "Client\\Services\\CrittografiaAES.cs",
-              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Services\\CrittografiaAES.cs",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Services\\CrittografiaAES.cs",
               "RelativeToolTip": "Client\\Services\\CrittografiaAES.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T21:09:58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T21:09:58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Controllo_JSON.cs",
-              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Services\\Controllo_JSON.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Services\\Controllo_JSON.cs",
               "RelativeDocumentMoniker": "Client\\Services\\Controllo_JSON.cs",
-              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Services\\Controllo_JSON.cs",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Services\\Controllo_JSON.cs",
               "RelativeToolTip": "Client\\Services\\Controllo_JSON.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-09T21:09:54.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Client",
-              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj",
+              "DocumentIndex": 10,
+              "Title": "Client.csproj",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Client.csproj",
               "RelativeDocumentMoniker": "Client\\Client.csproj",
-              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Client.csproj",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Client.csproj",
               "RelativeToolTip": "Client\\Client.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-11-09T21:07:57.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Program.cs",
               "RelativeDocumentMoniker": "Client\\Program.cs",
-              "ToolTip": "C:\\Users\\antoa\\OneDrive\\Desktop\\Client\\Client\\Program.cs",
+              "ToolTip": "C:\\Users\\antoa\\Music\\Dominoni_FrigoTrack-S.r.l\\FrigoTrack\\Client\\Client\\Program.cs",
               "RelativeToolTip": "Client\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8BAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB4BAAAAAAAAAAApwCsBAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-09T21:06:34.718Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

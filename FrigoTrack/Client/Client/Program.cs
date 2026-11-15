@@ -13,7 +13,7 @@ namespace Client
     {
         private static readonly HttpClient http = new HttpClient
         {
-            BaseAddress = new Uri("http://localhost:5000/")
+            BaseAddress = new Uri("http://localhost:5217/")
         };
 
         private static readonly Diffie_Hellman dh =
@@ -50,8 +50,20 @@ namespace Client
             Console.WriteLine("\nTEST COMPLETATI.");
 
             Console.WriteLine("\nAvvio simulazione sensori...");
+           
+            await SimulaSensori(3);
 
-            await SimulaSensori();
+            DateTime inizio = DateTime.UtcNow.AddDays(-1);
+            DateTime fine = DateTime.UtcNow;
+
+            await ConsultaStorico("FRIGO-BG-001", inizio, fine);
+            await ConsultaStorico("CAMION-MI-002", inizio, fine);
+            await ConsultaStorico("FRIGO-TO-003", inizio, fine);
+
+
+            await ChiudiSessione();
+
+            Console.WriteLine("\nSessione chiusa. Premere un tasto per terminare.");
         }
 
         // TEST 1: handshake
@@ -263,28 +275,59 @@ namespace Client
         }
 
         // Simulazione dei tre sensori
-        static async Task SimulaSensori()
+
+        static async Task SimulaSensori(int cicli)
         {
-            MisuraSensore[] sensori =
+            var sensori = new[]
             {
-                CreaMisura("FRIGO-BG-001", "food", 4.5),
-                CreaMisura("CAMION-MI-002", "pharma", 5.0),
-                CreaMisura("FRIGO-TO-003", "frozen", -20.0)
+            (
+            Misura: CreaMisura("FRIGO-BG-001", "food", 4.5),
+            TemperaturaBase: 4.5,
+            Variazione: 0.5
+            ),
+            (
+            Misura: CreaMisura("CAMION-MI-002", "pharma", 5.0),
+            TemperaturaBase: 5.0,
+            Variazione: 0.5
+            ),
+            (
+            Misura: CreaMisura("FRIGO-TO-003", "frozen", -20.0),
+            TemperaturaBase: -20.0,
+            Variazione: 1.0
+            )
             };
 
-            while (true)
+            // Identificativo univoco della simulazione
+            string idSimulazione = Guid.NewGuid().ToString();
+
+            Console.WriteLine("ID simulazione: " + idSimulazione);
+
+            for (int i = 0; i < cicli; i++)
             {
-                foreach (MisuraSensore sensore in sensori)
+                foreach (var sensore in sensori)
                 {
-                    sensore.Timestamp = DateTime.UtcNow.ToString("O");
+                    MisuraSensore misura = sensore.Misura;
+
+                    // Generazione di una temperatura casuale
+                    double variazione =
+                        (Random.Shared.NextDouble() * 2 - 1)
+                        * sensore.Variazione;
+
+                    misura.TemperatureC =
+                        sensore.TemperaturaBase + variazione;
+
+                    // Aggiornamento del timestamp
+                    misura.Timestamp = DateTime.UtcNow.ToString("O");
 
                     try
                     {
                         HttpResponseMessage risposta =
-                            await InviaMisura(sensore);
+                            await InviaMisura(misura);
 
                         Console.WriteLine(
-                            $"{sensore.SensorId} - HTTP {(int)risposta.StatusCode}"
+                            $"{misura.SensorId} - " +
+                            $"{misura.TemperatureC:F2} °C - " +
+                            $"HTTP {(int)risposta.StatusCode}"
                         );
 
                         if (risposta.IsSuccessStatusCode)
@@ -293,7 +336,9 @@ namespace Client
                                 await risposta.Content.ReadAsStringAsync();
 
                             Busta_cifrata? busta =
-                                JsonSerializer.Deserialize<Busta_cifrata>(contenuto);
+                                JsonSerializer.Deserialize<Busta_cifrata>(
+                                    contenuto
+                                );
 
                             if (busta != null)
                             {
@@ -316,5 +361,174 @@ namespace Client
                 await Task.Delay(5000);
             }
         }
+
+        // Consultazione dello storico delle misure
+        static async Task ConsultaStorico(
+            string idSensore,
+            DateTime inizio,
+            DateTime fine)
+        {
+            Console.WriteLine("\nCONSULTAZIONE STORICO");
+
+            // Creazione della richiesta
+            var richiesta = new
+            {
+                id_sensore = idSensore,
+                ora_inizio = inizio.ToUniversalTime().ToString("O"),
+                ora_fine = fine.ToUniversalTime().ToString("O")
+            };
+
+            // Conversione della richiesta in JSON
+            string json = JsonSerializer.Serialize(richiesta);
+
+            // Validazione tramite JSON Schema
+            if (!schemi.Valida("richieste_reading.json", json))
+            {
+                Console.WriteLine("Richiesta non valida.");
+                return;
+            }
+
+            // Cifratura della richiesta e creazione della busta
+            Busta_cifrata busta = CifraMessaggio(json);
+
+            // Invio della richiesta al server
+            //  HttpResponseMessage risposta =
+            //    await http.PostAsJsonAsync("api/readings", busta);
+            Console.WriteLine("Invio richiesta al server...");
+
+            using CancellationTokenSource timeout =
+                new CancellationTokenSource(TimeSpan.FromSeconds(15));
+
+            HttpResponseMessage risposta;
+
+            try
+            {
+                risposta = await http.PostAsJsonAsync(
+                    "api/readings",
+                    busta,
+                    timeout.Token
+                );
+
+                Console.WriteLine("Risposta HTTP ricevuta: " + risposta.StatusCode);
+            }
+            catch (OperationCanceledException)
+            {
+                Console.WriteLine("ERRORE: timeout durante la richiesta HTTP.");
+                return;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ERRORE HTTP: " + ex.Message);
+                return;
+            }
+            if (!risposta.IsSuccessStatusCode)
+            {
+                Console.WriteLine(
+                    "Errore nella consultazione: " + risposta.StatusCode
+                );
+                return;
+            }
+
+            // Lettura della risposta del server
+            string contenuto = await risposta.Content.ReadAsStringAsync();
+
+            Busta_cifrata? rispostaCifrata =
+                JsonSerializer.Deserialize<Busta_cifrata>(contenuto);
+
+            if (rispostaCifrata == null)
+            {
+                Console.WriteLine("Risposta del server non valida.");
+                return;
+            }
+
+            // Decifratura della risposta
+            string jsonMisure = aes.Decifra(
+                chiave,
+                rispostaCifrata.Ciphertext,
+                rispostaCifrata.Tag
+            );
+
+            // Validazione della risposta decifrata
+            if (!schemi.Valida("risposta_reading.json", jsonMisure))
+            {
+                Console.WriteLine("Risposta non conforme allo schema.");
+                return;
+            }
+
+            // Lettura delle misure ricevute
+            using JsonDocument documento = JsonDocument.Parse(jsonMisure);
+
+            JsonElement misure =
+                documento.RootElement.GetProperty("misure");
+
+            Console.WriteLine("\nMisure ricevute: " + misure.GetArrayLength());
+
+            foreach (JsonElement misura in misure.EnumerateArray())
+            {
+                Console.WriteLine("------------------------------");
+
+                Console.WriteLine(
+                    "Sensore: " +
+                    misura.GetProperty("sensor_id").GetString()
+                );
+
+                Console.WriteLine(
+                    "Data: " +
+                    misura.GetProperty("timestamp").GetString()
+                );
+
+                Console.WriteLine(
+                    "Tipo merce: " +
+                    misura.GetProperty("cargo_type").GetString()
+                );
+
+                Console.WriteLine(
+                    "Temperatura: " +
+                    misura.GetProperty("temperature_c").GetDouble() +
+                    " °C"
+                );
+            }
+
+            Console.WriteLine("------------------------------");
+        }
+        // Chiusura della sessione
+        static async Task ChiudiSessione()
+        {
+            Console.WriteLine("\nCHIUSURA SESSIONE");
+
+            // Creazione del messaggio di chiusura
+            string json = JsonSerializer.Serialize(new
+            {
+                azione = "chiudi"
+            });
+
+            // Cifratura del messaggio
+            Busta_cifrata busta = CifraMessaggio(json);
+
+            // Invio della richiesta al server
+            HttpResponseMessage risposta =
+                await http.PostAsJsonAsync("api/close", busta);
+
+            if (risposta.IsSuccessStatusCode)
+            {
+                string contenuto =
+                    await risposta.Content.ReadAsStringAsync();
+
+                Console.WriteLine("Server: " + contenuto);
+
+                // La sessione non è più utilizzabile
+                sessionId = "";
+                chiave = Array.Empty<byte>();
+
+                Console.WriteLine("Sessione chiusa correttamente.");
+            }
+            else
+            {
+                Console.WriteLine(
+                    "Errore nella chiusura: " + risposta.StatusCode
+                );
+            }
+        }
     }
+
 }

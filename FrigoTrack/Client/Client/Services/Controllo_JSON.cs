@@ -21,8 +21,14 @@ namespace Client.Services
 
             using JsonDocument documento = JsonDocument.Parse(json);
 
+            EvaluationOptions opzioni = new()
+            {
+                OutputFormat = OutputFormat.List,
+                RequireFormatValidation = true
+            };
+
             EvaluationResults risultato =
-                schema.Evaluate(documento.RootElement);
+                schema.Evaluate(documento.RootElement, opzioni);
 
             return risultato.IsValid;
         }
