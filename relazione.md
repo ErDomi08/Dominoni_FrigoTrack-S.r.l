@@ -1,17 +1,50 @@
-# Relazione su FrigoTrack.
+# FrigoTrack - Monitoraggio Telemetria Sicura Client-Server
 
-## 1. Scelte Tecniche e Motivazioni
-Il progetto mentiene i vincoli stringenti imposti dalla consegna (canale HTTP in chiaro, nessuna chiave in rete, struttura messaggio fissa) adottando queste soluzioni architetturali:
+FrigoTrack è un'applicazione Client-Server scritta in C# su .NET(.NET 8.0/.NET 9.0) progettata per inviare e certificare i dati di telemetria da parte di sensori ambientali.
 
-*   **Scambio Chiavi (Diffie-Hellman)**: Implementato in modo nativo sfruttando la classe `System.Numerics.BigInteger` di .NET e la sua funzione di potenza modulare `ModPow`. Questa scelta garantisce la massima efficienza matematica anche con numeri primi di grandi dimensioni, rispettando il vincolo di non delegare l'intero handshake a librerie esterne di terze parti.
-*   **Cifratura Autenticata (AES-GCM)**: Invece di usare modalità basilari come AES-CBC (che richiede un vettore di inizializzazione separato e non protegge dall'alterazione dei dati), si è optato per la modalità **GCM (Galois/Counter Mode)** tramite la classe nativa `System.Security.Cryptography.AesGcm`. Questa scelta è cruciale: fornisce contemporaneamente la riservatezza (`testo_cifrato`) e l'autenticità dei dati (`tag`). Se un concorrente o un tecnico malintenzionato altera anche un singolo bit della busta in transito, il server fallisce la verifica del tag prima di elaborare il testo, neutralizzando l'attacco all'origine.
-*   **Validazione Condizionale Rigida**: I messaggi decifrati vengono validati secondo le regole descritte nei file `schemas/`. Nel codice C#, questo controllo formale viene mappato attraverso controlli condizionali stringenti e deserializzazione tipizzata con `System.Text.Json`, garantendo il rifiuto immediato con codice HTTP 400 in caso di discrepanze strutturali.
+## Caratteristiche Principali
+- **Scambio Chiavi Sicuro:** uso algoritmo Diffie-Hellman per concordare la chiave di sessione.
+- **Cifratura Avanzata:** Utilizzo di AES (Authenticated Encryption) per garantire riservatezza e integrità.
+- **Validazione JSON Rigida:** Controllo dei payload in transito tramite JSON Schema.
 
-## 2. Limiti Noti della Soluzione e Possibili Evoluzioni
+## Struttura del Progetto
+- `Server/`: Web APP ASP.NET Core che valida gli schemi, gestisce le sessioni e decifra le letture.
+- `Client/`: Applicazione console che simula il sensore, esegue l'handshake e invia i dati cifrati.
+- `Schemas/`: Contiene i file di definizione (json) per garantire la corretta struttura dei messaggi.
 
-Nonostante il sistema soddisfi i requisiti del prototipo, un ambiente di produzione reale evidenzierebbe due limiti di sicurezza intrinseci legati all'assenza di HTTPS:
+## Prerequisiti
+- .NET 8.0 o .NET 9.0
+- Visual Studio 2022 o Visual Studio Code
 
-1.  **Vulnerabilità ad Attacchi Man-in-the-Middle (MitM) durante l'Handshake**: Diffie-Hellman protegge efficacemente da un utente malintenzionato che si limita ad ascoltare passivamente il traffico di rete (sniffing). Tuttavia, se l'attaccante intercetta attivamente la richiesta iniziale di handshake, può porsi nel mezzo modificando i parametri e fingendosi il server agli occhi del client, e viceversa. 
-    *   *Soluzione futura*: Integrare un'autenticazione del server a chiave asimmetrica (Firma Digitale) con una chiave pubblica del server pre-condivisa in modo sicuro nei sensori in fase di fabbricazione.
-2.  **Attacco di Replay (Replay Attack)**: Poiché la struttura della busta cifrata è deterministica per una specifica lettura, un utente malintenzionato potrebbe catturare una busta valida registrata su `/api/telemetry` (ad esempio una lettura che certifica una temperatura corretta) e inviarla nuovamente al server in un secondo momento, ingannando il sistema di tracciabilità sulla freschezza del dato.
-    *   *Soluzione futura*: Introdurre all'interno del JSON applicativo un numero progressivo monouso (*Nonce applicativo*) o verificare rigidamente sul server che la `marca_temporale` interna non differisca di oltre pochi secondi dall'orario di ricezione del server, scartando i messaggi obsoleti.
+## Installazione e Configurazione
+1. scaricare il codice della soluzione.
+2. Aprire la cartella principale del progetto nel terminale o caricare il file `.sln` su Visual Studio.
+3. Ripristinare i pacchetti NuGet necessari lanciando il comando:
+   ```bash
+   dotnet restore
+   ```
+
+## Come Avviare l'Applicazione
+
+### 1. Avviare il Server
+andare nella cartella del server ed eseguire il progetto:
+```bash
+cd Server/Server
+dotnet run
+```
+Il server rimarrà in ascolto sugli endpoint predefiniti (es. `https://localhost:7233` o `http://localhost:5233`).
+
+### 2. Avviare il Client
+Aprire un secondo terminale, spostarsi nella cartella del client ed avviare l'eseguibile:
+```bash
+cd Client/Client
+dotnet run
+```
+
+## Test Integrata
+All'avvio, il Client eseguirà automaticamente una sequenza composta da **5 scenari di test** per verificare l'applicazione:
+1. **Handshake Test:** Verifica dello scambio chiavi Diffie-Hellman.
+2. **Valid Reading Test:** Invio di una telemetria cifrata corretta (esito positivo).
+3. **Invalid JSON Test:** Invio di un messaggio malformato (rifiutato dal validatore JSON Schema del server).
+4. **Wrong Key Test:** Invio di un pacchetto cifrato con una chiave errata (rifiutato dal controllo di integrità AES-GCM del server).
+5. **Close Session Test:** Invio del comando di chiusura e invalidazione della sessione crittografica.
